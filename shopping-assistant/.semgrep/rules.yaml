@@ -1,0 +1,7 @@
+rules:
+  - id: detect-gcp-api-key
+    pattern-regex: 'AIzaSy[A-Za-z0-9_\-]*'
+    languages:
+      - python
+    message: "Security Warning: Detected a hardcoded Google API key prefix. Never store API keys or secrets in source code."
+    severity: ERROR
