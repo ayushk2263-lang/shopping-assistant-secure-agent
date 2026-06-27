@@ -4,10 +4,11 @@ repos:
     hooks:
       - id: end-of-file-fixer
       - id: trailing-whitespace
+
   - repo: local
     hooks:
       - id: semgrep-local
         name: Semgrep Local Scan
-        entry: python shopping-assistant/.semgrep/run_semgrep_mock.py
+        entry: python .semgrep/run_semgrep_mock.py
         language: system
         types: [python]
